@@ -1,0 +1,19 @@
+#include <iostream>
+#include<algorithm>
+using namespace std;
+ bool mycompare(int a, int b)
+    {
+        return a > b;
+    }
+int main() 
+{
+    int i;
+    int a[] = {1,25,58,21,1,58,47,78,54,98,65,21};
+    int n = sizeof(a)/sizeof(n);
+    sort(a , a+n, mycompare);
+    for(i=0;i<=n;i++)
+    {
+        cout<<a[i]<< " ";
+    }
+    return 0;
+    }
